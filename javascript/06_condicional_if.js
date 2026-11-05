@@ -79,4 +79,60 @@ if(conbustible4<50 &&
         if(nave_averiada==="si" ){
             console.log('No puedes viajar a otra dimension, la nave esta averiada');
         }
+        if(rick_disponible==="no" && summer_disponible==="no"){
+            console.log('No puedes viajar a otra dimension, Rick y Summer no estan disponibles');
+        }
     }
+
+
+console.log("Misión interdimensional");
+let cristalesObjetivos = 200;
+let cristalesRecolectados = 150;
+let combustibleInicial = 1000;
+let combustibleConsumido = 850;
+let mortyHerido = "si";
+let naveAveriada = "no";
+let bonificacion = 0;
+let porcentajeCumplimiento = (cristalesRecolectados / cristalesObjetivos) * 100;
+let combustibleRestante = combustibleInicial - combustibleConsumido;
+
+if (porcentajeCumplimiento >= 100 && combustibleRestante > 0 && mortyHerido === "no" && naveAveriada === "no") {
+    console.log("Misión Cumplida con Éxito");
+} else if (porcentajeCumplimiento >= 70 && porcentajeCumplimiento < 90) {
+    console.log("Misión Cumplida Parcialmente");
+} else if (porcentajeCumplimiento >= 50 && porcentajeCumplimiento < 70) {
+    console.log("Misión Regular, se requiere mejorar el desempeño");
+} else {
+    console.log("Misión Fallida y Peligro de Extinción");
+}
+
+console.log("Evaluación de bonificación por desempeño");
+if (porcentajeCumplimiento >= 90 && combustibleRestante >= 200) {
+    bonificacion = 1000;
+    console.log("Bonificación otorgada por desempeño excelente.");
+} else {
+    console.log("No se otorga bonificación por desempeño.");
+}
+
+console.log("Regreso seguro a la dimensión original");
+if (mortyHerido === "no" && naveAveriada === "no") {
+    console.log("Regreso seguro a la dimensión original.");
+} else if (mortyHerido === "si" && naveAveriada === "no") {
+    console.log("Regreso a la dimensión original con precaución, Morty está herido.");
+} else if (mortyHerido === "no" && naveAveriada === "si") {
+    console.log("Regreso a la dimensión original con precaución, la nave está averiada.");
+} else {
+    console.log("Regreso a la dimensión original con precaución, Morty está herido y la nave está averiada.");
+}
+
+console.log("Resumen de la misión");
+console.log("Cristales Objetivos:", cristalesObjetivos);
+console.log("Cristales Recolectados:", cristalesRecolectados);
+console.log("Porcentaje de Cumplimiento:", porcentajeCumplimiento.toFixed(2) + "%");
+console.log("Combustible Inicial:", combustibleInicial);
+console.log("Combustible Consumido:", combustibleConsumido);
+console.log("Combustible Restante:", combustibleRestante);
+console.log("Morty Herido:", mortyHerido);
+console.log("Nave Averiada:", naveAveriada);
+console.log("Bonificación Otorgada:", bonificacion);
+
