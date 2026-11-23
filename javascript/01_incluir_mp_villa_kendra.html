@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymFit - Introduccion a JavaScript</title>
+    <script>
+        alert('¡Bienvenido a GymFit! al Inicio de la Página');
+        console.log('Saludo desde el Inicio de la Página de GymFit');
+    </script>
+</head>
+<body>
+    <h1>Incluir JavaScript en la página de GymFit</h1>
+    <h2>Modo Inline</h2>
+    <button onclick="alert('¡Hora de entrenar!')">
+        Mostrar mensaje
+    </button>
+    <input type="text"
+        oninput="console.log(this.value)"
+        placeholder="Escribe tu nombre...">
+    <input type="text"
+        onchange="console.log('Rutina guardada')"
+        placeholder="Escribe tu rutina y haz click afuera">
+    <input type="text"
+        oninput="console.log(this.value)"
+        onblur="alert('¡Atención saliste del campo de texto!')"
+        placeholder="Haz click afuera...">
+    <input type="text"
+        onfocus="console.log('¡El socio está escribiendo!')"
+        onblur="alert('¡Atención saliste del campo de texto!')"
+        placeholder="Haz click dentro y afuera...">
+    <script src="01_incluir_mp_villa_kendra.js"></script>
+</body>
+</html>

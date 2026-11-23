@@ -1,0 +1,126 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.contenedor{
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+    background-color: #1F2937;
+}
+
+.entrenador{
+    padding: 20px;
+    background-color: #EA580C;
+    border: 2px solid #FACC15;
+}
+
+.equipo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    padding: 20px;
+    color: white;
+    background-color: #1F2937;
+}
+
+.zonas{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 15px;
+    padding: 20px;
+    color: white;
+    background-color: #1F2937;
+}
+
+.zona{
+    padding: 30px;
+    background-color: #15803D;
+    border: 2px solid #FACC15;
+    text-align: center;
+}
+
+.recepcion{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 130px 90px;
+    gap: 10px;
+    color: white;
+    background-color: #1F2937;
+}
+
+.recepcion div{
+    padding: 30px;
+    background-color: #15803D;
+    border: 2px solid #FACC15;
+    text-align: center;
+}
+
+.maquinas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70px 130px 90px;
+    gap: 10px;
+    padding: 20px;
+    background-color: #1F2937;
+    color: white;
+}
+
+.maquinas div{
+    padding: 30px;
+    background-color: #2563EB;
+    border: 2px solid #22C55E;
+}
+
+.equipo2{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    padding: 20px;
+    color: white;
+    background-color: #1F2937;
+}
+
+.clases{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    color: white;
+    background-color: #1F2937;
+}
+
+.clases div{
+    padding: 30px;
+    background-color: #B91C1C;
+    border: 2px solid #FDE68A;
+    text-align: center;
+}
+
+.rutinas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+    color: white;
+    background-color: #1F2937;
+}
+
+.rutinas div{
+    padding: 30px;
+    background-color: #B91C1C;
+    border: 2px solid #FDE68A;
+    text-align: center;
+}
+
+.destacada{
+    grid-column: span 2;
+    background-color: #15803D !important;
+}
+
+.rutina-principal{
+    grid-column: span 2;
+    background-color: #15803D !important;
+}
