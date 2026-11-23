@@ -1,0 +1,18 @@
+.plan{
+    display: block;
+    padding: 20px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.basico{
+    background-color: #2563EB;
+}
+
+.cardio{
+    background-color: #15803D;
+}
+
+.premium{
+    background-color: #C2410C;
+}

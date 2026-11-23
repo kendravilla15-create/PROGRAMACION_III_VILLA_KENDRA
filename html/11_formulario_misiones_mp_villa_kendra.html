@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Registro de rutinas</title>
+</head>
+<body>
+    <header>
+        <h1>Centro de Entrenamiento GymFit</h1>
+        <p>Registro de rutinas</p>
+    </header>
+    <hr>
+    <main>
+        <form action="#"
+              method="get"
+              id="registro-rutinas">
+            <fieldset>
+                <legend>Información de la rutina</legend>
+
+                <label for="codigo">
+                    Código de rutina:
+                </label>
+                <input type="text"
+                       id="codigo"
+                       name="codigo"
+                       placeholder="RUT-001"
+                       maxlength="10"
+                       required>
+
+                <br><br>
+
+                <label for="entrenador">
+                    Entrenador:
+                </label>
+                <select id="entrenador"
+                        name="entrenador"
+                        required>
+                    <option value="">
+                        Selecciona un entrenador
+                    </option>
+                    <option value="carlos">
+                        Carlos Pérez
+                    </option>
+                    <option value="ana">
+                        Ana Torres
+                    </option>
+                    <option value="luis">
+                        Luis Gómez
+                    </option>
+                </select>
+
+                <br><br>
+
+                <label for="grupo">
+                    Grupo muscular:
+                </label>
+                <input type="text"
+                       id="grupo"
+                       name="grupo"
+                       placeholder="Ej. Pierna"
+                       required>
+
+                <br><br>
+
+                <label for="fecha">
+                    Fecha de inicio:
+                </label>
+                <input type="date"
+                       id="fecha"
+                       name="fecha"
+                       required>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Características</legend>
+
+                <p>Intensidad de la rutina:</p>
+
+                <input type="radio"
+                       id="alta"
+                       name="intensidad"
+                       value="alta"
+                       required>
+                <label for="alta">Alta</label>
+
+                <input type="radio"
+                       id="media"
+                       name="intensidad"
+                       value="media">
+                <label for="media">Media</label>
+
+                <input type="radio"
+                       id="baja"
+                       name="intensidad"
+                       value="baja">
+                <label for="baja">Baja</label>
+
+                <br><br>
+
+                <label for="series">
+                    Número de series (1 a 10):
+                </label>
+                <input type="number"
+                       id="series"
+                       name="series"
+                       min="1"
+                       max="10"
+                       value="4">
+
+                <p>Equipos necesarios:</p>
+
+                <input type="checkbox"
+                       id="mancuernas"
+                       name="equipos"
+                       value="mancuernas">
+                <label for="mancuernas">
+                    Mancuernas
+                </label>
+
+                <br>
+
+                <input type="checkbox"
+                       id="barra"
+                       name="equipos"
+                       value="barra">
+                <label for="barra">
+                    Barra olímpica
+                </label>
+
+                <br>
+
+                <input type="checkbox"
+                       id="maquinas"
+                       name="equipos"
+                       value="maquinas">
+                <label for="maquinas">
+                    Máquinas
+                </label>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Descripción de la rutina</legend>
+                <label for="descripcion">
+                    Objetivo principal:
+                </label>
+                <br>
+                <textarea id="descripcion"
+                          name="descripcion"
+                          rows="5"
+                          cols="45"
+                          maxlength="500"
+                          placeholder="Describe la rutina..."
+                          required></textarea>
+            </fieldset>
+
+            <br>
+            <button type="submit">
+                Registrar rutina
+            </button>
+
+            <button type="reset">
+                Limpiar datos
+            </button>
+        </form>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>
+            <small>
+                Gimnasio GymFit - 2026
+            </small>
+        </p>
+    </footer>
+</body>
+</html>
