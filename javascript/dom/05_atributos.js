@@ -19,3 +19,16 @@ verDimension.addEventListener("click", function(){
     dimension.textContent=personaje.dataset.dimension;
 });
 
+const portal = document.getElementById("portal");
+const activarPortal = document.getElementById("activarPortal");
+
+activarPortal.addEventListener("click", function(){
+    if(portal.textContent=="Portal Inactivo"){
+        portal.style.backgroundColor="green";
+        portal.textContent="Portal Activado"
+    } else{
+        portal.style.background= "red";
+        portal.style.color="white";
+        portal.textContent="Portal Inactivo"
+    }
+})
