@@ -29,3 +29,15 @@ console.log(planetas[3].textContent);
 console.log(planetas[4].textContent);
 console.log(planetas[5].textContent);
 
+console.log("recorrer a travez de for");
+for(let i=0; i<planetas.length; i++){
+    console.log(planetas[i].textContent);
+}
+console.log("Con forEach"),
+planetas.forEach(function(planeta){
+    console.log(planeta.textContent);
+});
+console.log("Con for of");
+for(let planeta of planetas){
+    console.log(planeta.textContent);
+}

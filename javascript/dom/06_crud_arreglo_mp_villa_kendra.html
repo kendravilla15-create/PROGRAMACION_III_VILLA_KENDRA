@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymFit - CRUD de Socios</title>
+    <script src="06_crud_arreglo_mp_villa_kendra.js" defer></script>
+</head>
+<body>
+    <h1>Registro de Socios GymFit</h1>
+    <h2 id="tituloFormulario">Registrar Socio</h2>
+    <form id="formulario">
+        <input type="text" id="nombre" placeholder="Nombre del socio">
+        <select id="plan">
+            <option value="Básico">Básico</option>
+            <option value="Premium">Premium</option>
+            <option value="Cardio">Cardio</option>
+        </select>
+        <select id="estado">
+            <option value="Activo">Activo</option>
+            <option value="Inactivo">Inactivo</option>
+            <option value="Suspendido">Suspendido</option>
+        </select>
+        <button type="submit" id="guardar">Agregar</button>
+        <button type="button" id="cancelar" hidden>Cancelar</button>
+    </form>
+    <h2>Socios Registrados</h2>
+    <h2>Cantidad: <span id="cantidad"></span></h2>
+    <div id="contenedor"></div>
+</body>
+</html>
